@@ -8,14 +8,15 @@ body {
     align-items: center;
     height: 100vh;
     flex-direction: column;
+    overflow: auto; 
 }
 
 button {
-    margin: 10px;
-    padding: 10px 20px;
-    font-size: 16px;
+    margin: 20px;
+    padding: 15px 25px;
+    font-size: 18px;
     border: none;
-    border-radius: 5px;
+    border-radius: 50px;
     color: white;
     background-color: #007BFF;
     cursor: pointer;
@@ -26,11 +27,15 @@ button:hover {
 }
 
 input, select {
-    margin: 10px;
-    padding: 10px;
-    font-size: 16px;
+    margin: 20px;
+    padding: 15px;
+    font-size: 18px;
     border-radius: 5px;
     border: 1px solid #ddd;
+    max-width: 90%; 
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto;
 }
 
 p {
@@ -40,5 +45,7 @@ p {
 
 img {
     max-width: 100%;
+    max-height: 50vh;
     height: auto;
+    object-fit: contain;
 }
